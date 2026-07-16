@@ -559,6 +559,29 @@ a {
     color: var(--accent);
 }
 
+.download-other-releases {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 32px auto 0;
+    padding: 10px 22px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+    text-align: center;
+    width: auto;
+}
+
+.download-other-releases:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+}
+
 /* ── Footer ── */
 .section-footer {
     padding: 60px 0 40px;
