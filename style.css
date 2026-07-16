@@ -233,6 +233,20 @@ a {
     background-clip: text;
 }
 
+#rotate-word {
+    display: inline-block;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    background: linear-gradient(135deg, var(--accent-light), #c084fc, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#rotate-word.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
 .hero-desc {
     font-size: 1.15rem;
     color: var(--text-secondary);
@@ -1326,30 +1340,50 @@ a {
 }
 
 /* ── About Page ── */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 48px;
-    align-items: start;
+.mission-section {
+    min-height: 80vh;
 }
 
-.about-main h2 {
+.mission-reading {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.mission-line {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    margin-bottom: 28px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.mission-line.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mission-line:first-child {
     font-size: 2rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    color: var(--text-primary);
+    margin-bottom: 40px;
 }
 
-.about-main p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 16px;
+.mission-highlight {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: var(--accent-light) !important;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .about-stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+    margin-top: 60px;
 }
 
 .stat-card {
@@ -1468,12 +1502,16 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-
     .about-stats {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mission-line:first-child {
+        font-size: 1.6rem;
+    }
+
+    .mission-highlight {
+        font-size: 1.2rem !important;
     }
 
     .toc-grid {
@@ -1502,5 +1540,9 @@ a {
 
     .about-stats {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .mission-line {
+        font-size: 1rem;
     }
 }

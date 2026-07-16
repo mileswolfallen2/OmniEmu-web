@@ -47,32 +47,31 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="section">
+    <section class="section mission-section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-main">
-                    <h2>Our Mission</h2>
-                    <p>OmniEmu was created to solve a simple but frustrating problem: managing retro game emulators is complicated, scattered, and often requires technical knowledge that shouldn't be necessary just to play the games you love.</p>
-                    <p>We believe that playing retro games should be accessible to everyone. No terminal commands, no hunting for configuration files, no figuring out which emulator supports which system. Just install, scan, and play.</p>
-                    <p>OmniEmu brings all your emulators, native ports, and recompilations together in one clean, modern interface. Whether you're a first-time user or a seasoned retro gamer with hundreds of ROMs, OmniEmu makes it easy to manage your entire library.</p>
+            <div class="mission-reading">
+                <h2 class="mission-line">Our Mission</h2>
+                <p class="mission-line">OmniEmu was created to solve a simple but frustrating problem: managing retro game emulators is complicated, scattered, and often requires technical knowledge that shouldn't be necessary just to play the games you love.</p>
+                <p class="mission-line">We believe that playing retro games should be accessible to everyone. No terminal commands, no hunting for configuration files, no figuring out which emulator supports which system.</p>
+                <p class="mission-line mission-highlight">Just install, scan, and play.</p>
+                <p class="mission-line">OmniEmu brings all your emulators, native ports, and recompilations together in one clean, modern interface. Whether you're a first-time user or a seasoned retro gamer with hundreds of ROMs, OmniEmu makes it easy to manage your entire library.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-number">20</span>
+                    <span class="stat-label">Supported Emulators</span>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">20</span>
-                        <span class="stat-label">Supported Emulators</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Platforms</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Free &amp; Open Source</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">MIT</span>
-                        <span class="stat-label">License</span>
-                    </div>
+                <div class="stat-card">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Platforms</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Free &amp; Open Source</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">MIT</span>
+                    <span class="stat-label">License</span>
                 </div>
             </div>
         </div>
@@ -207,6 +206,18 @@
                 toggle.classList.remove('active');
             });
         });
+
+        // Mission scroll-through reading effect
+        const missionLines = document.querySelectorAll('.mission-line');
+        const missionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2, rootMargin: '0px 0px -60px 0px' });
+
+        missionLines.forEach(line => missionObserver.observe(line));
     </script>
 </body>
 </html>

@@ -53,7 +53,7 @@
         </div>
         <div class="hero-content">
             <div class="hero-badge">v0.3.2 &mdash; Now Available</div>
-            <h1>All Your Games.<br><span class="gradient-text">One Place.</span></h1>
+            <h1>All Your Games.<br><span class="gradient-text" id="rotate-word">One Place.</span></h1>
             <p class="hero-desc">OmniEmu is a cross-platform emulator manager, game launcher, and ROM library for Windows, macOS, and Linux. Install emulators with one click, scan your ROMs, and launch games from a unified library.</p>
             <div class="hero-buttons">
                 <a href="#download" class="btn btn-primary">
@@ -545,6 +545,22 @@
         document.querySelectorAll('.feature-card, .emulator-card, .step, .download-card').forEach(el => {
             observer.observe(el);
         });
+
+        // Hero rotating text animation
+        (function() {
+            var words = ["One Place.", "All in One App.", "One Library.", "One Launch."];
+            var el = document.getElementById('rotate-word');
+            if (!el) return;
+            var i = 0;
+            setInterval(function() {
+                el.classList.add('hidden');
+                setTimeout(function() {
+                    i = (i + 1) % words.length;
+                    el.textContent = words[i];
+                    el.classList.remove('hidden');
+                }, 250);
+            }, 2800);
+        })();
     </script>
 </body>
 </html>
