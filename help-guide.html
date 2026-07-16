@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Guide - OmniEmu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png" alt="OmniEmu" class="nav-icon">
+                <span>OmniEmu</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#emulators">Emulators</a>
+                <a href="help-guide.html" class="active">Help Guide</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a href="https://github.com/mileswolfallen2/OmniEmu2.0" target="_blank" class="nav-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Help Guide</h1>
+            <p>Everything you need to get up and running with OmniEmu</p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="section" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="container">
+            <div class="guide-toc">
+                <h3>On This Page</h3>
+                <div class="toc-grid">
+                    <a href="#installation" class="toc-link">
+                        <span class="toc-num">1</span> Installation
+                    </a>
+                    <a href="#first-launch" class="toc-link">
+                        <span class="toc-num">2</span> First Launch
+                    </a>
+                    <a href="#installing-emulators" class="toc-link">
+                        <span class="toc-num">3</span> Installing Emulators
+                    </a>
+                    <a href="#rom-library" class="toc-link">
+                        <span class="toc-num">4</span> Setting Up Your ROM Library
+                    </a>
+                    <a href="#launching-games" class="toc-link">
+                        <span class="toc-num">5</span> Launching Games
+                    </a>
+                    <a href="#controller-setup" class="toc-link">
+                        <span class="toc-num">6</span> Controller Setup
+                    </a>
+                    <a href="#bios-manager" class="toc-link">
+                        <span class="toc-num">7</span> BIOS Manager
+                    </a>
+                    <a href="#themes" class="toc-link">
+                        <span class="toc-num">8</span> Light & Dark Mode
+                    </a>
+                    <a href="#auto-update" class="toc-link">
+                        <span class="toc-num">9</span> Auto-Updates
+                    </a>
+                    <a href="#troubleshooting" class="toc-link">
+                        <span class="toc-num">10</span> Troubleshooting
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">1</span>
+                    <h2>Installation</h2>
+                </div>
+
+                <h3>macOS</h3>
+                <div class="guide-step">
+                    <p>1. Download the <code>.dmg</code> file from the <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases" target="_blank">releases page</a>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Open the <code>.dmg</code> and drag <strong>OmniEmu.app</strong> to your Applications folder.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. On first launch, macOS may block the app. Right-click the app and select <strong>Open</strong>, or run this terminal command:</p>
+                    <div class="code-block">
+                        <code>sudo xattr -rd com.apple.quarantine /Applications/OmniEmu.app</code>
+                    </div>
+                </div>
+
+                <h3>Windows</h3>
+                <div class="guide-step">
+                    <p>1. Download the <code>.exe</code> installer from the <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases" target="_blank">releases page</a>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. When SmartScreen appears, click <strong>More Info</strong> then <strong>Run Anyway</strong>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. A portable <code>.zip</code> version is also available if you prefer not to install.</p>
+                </div>
+
+                <h3>Linux</h3>
+                <div class="guide-step">
+                    <p>1. Download the <code>.AppImage</code> file from the <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases" target="_blank">releases page</a>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Make it executable and run it:</p>
+                    <div class="code-block">
+                        <code>chmod +x OmniEmu-*.AppImage<br>./OmniEmu-*.AppImage</code>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <p>3. If the app doesn't launch, you may need to install <code>libfuse2</code>:</p>
+                    <div class="code-block">
+                        <code># Ubuntu/Debian<br>sudo apt install libfuse2<br><br># Fedora<br>sudo dnf install fuse-libs</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Launch -->
+    <section id="first-launch" class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">2</span>
+                    <h2>First Launch</h2>
+                </div>
+                <p>When you open OmniEmu for the first time, you'll see the main dashboard. The app will detect your operating system and show the emulators available for your platform.</p>
+                <div class="guide-tip">
+                    <strong>Tip:</strong> OmniEmu has no tracking, no ads, and no accounts required. Just install and play.
+                </div>
+                <p>The interface has three main areas:</p>
+                <div class="guide-two-col">
+                    <div class="guide-info-card">
+                        <h4>Library</h4>
+                        <p>Install, update, and manage your emulators. This is where you'll spend most of your time during setup.</p>
+                    </div>
+                    <div class="guide-info-card">
+                        <h4>Games</h4>
+                        <p>Browse your scanned ROM library with cover art, organized by platform.</p>
+                    </div>
+                </div>
+                <div class="guide-info-card" style="margin-top: 16px;">
+                    <h4>Settings</h4>
+                    <p>Configure ROM directories, theme preferences, and app behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installing Emulators -->
+    <section id="installing-emulators" class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">3</span>
+                    <h2>Installing Emulators</h2>
+                </div>
+                <p>OmniEmu supports one-click installation for 10 emulators. Here's how:</p>
+                <div class="guide-step">
+                    <p>1. Navigate to the <strong>Library</strong> tab in the sidebar.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. You'll see a list of all supported emulators with their status (Installed / Not Installed).</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Click the <strong>Install</strong> button next to any emulator.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. OmniEmu will download, extract, and auto-configure the emulator for you.</p>
+                </div>
+                <div class="guide-step">
+                    <p>5. Once installed, the button changes to <strong>Launch</strong> and you can open the emulator directly.</p>
+                </div>
+                <div class="guide-tip">
+                    <strong>Note:</strong> Each emulator is around 50-300 MB. Installing all 10 requires roughly 2-3 GB of disk space.
+                </div>
+
+                <h3 style="margin-top: 40px;">Supported Emulators</h3>
+                <div class="guide-emulator-list">
+                    <div class="guide-emu-item">
+                        <strong>Dolphin</strong> &mdash; GameCube &amp; Wii
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>RPCS3</strong> &mdash; PlayStation 3
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Eden</strong> &mdash; Nintendo Switch
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>PCSX2</strong> &mdash; PlayStation 2
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>MAME</strong> &mdash; Arcade
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>PPSSPP</strong> &mdash; PSP
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>DuckStation</strong> &mdash; PlayStation 1
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>melonDS</strong> &mdash; Nintendo DS
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Flycast</strong> &mdash; Dreamcast, Naomi, Atomiswave
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>RetroArch</strong> &mdash; Multi-system (NES, SNES, N64, GB/GBA, PS1, and more)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROM Library -->
+    <section id="rom-library" class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">4</span>
+                    <h2>Setting Up Your ROM Library</h2>
+                </div>
+                <p>OmniEmu can scan your ROM folders and build a browsable library with cover art.</p>
+                <div class="guide-step">
+                    <p>1. Go to <strong>Settings</strong> in the sidebar.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Find the <strong>ROMs Directory</strong> setting and click <strong>Browse</strong> to select the folder where your ROMs are stored.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Click <strong>Scan</strong> to have OmniEmu detect all supported ROM files.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. OmniEmu will match each ROM to its platform and fetch cover art automatically.</p>
+                </div>
+                <div class="guide-step">
+                    <p>5. Head to the <strong>Games</strong> tab to browse your library.</p>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>Tip:</strong> You can organize ROMs into subfolders by platform (e.g., <code>ROMs/Nintendo 64/</code>, <code>ROMs/PlayStation/</code>) for cleaner organization. OmniEmu will scan subdirectories automatically.
+                </div>
+
+                <h3 style="margin-top: 40px;">Supported ROM Formats</h3>
+                <p>OmniEmu recognizes a wide range of ROM file types including <code>.zip</code>, <code>.7z</code>, <code>.iso</code>, <code>.bin</code>, <code>.cue</code>, <code>.n64</code>, <code>.z64</code>, <code>.gba</code>, <code>.nds</code>, <code>.gbc</code>, <code>.nes</code>, <code>.sfc</code>, <code>.smc</code>, <code>.chd</code>, <code>.pbp</code>, and many more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Launching Games -->
+    <section id="launching-games" class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">5</span>
+                    <h2>Launching Games</h2>
+                </div>
+                <p>Once your library is set up, launching a game is easy:</p>
+                <div class="guide-step">
+                    <p>1. Open the <strong>Games</strong> tab to see your library.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Browse by platform using the filter chips at the top, or scroll through your full collection.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Click on a game to select it, then click <strong>Play</strong>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. OmniEmu will automatically launch the correct emulator with the right settings.</p>
+                </div>
+                <div class="guide-tip">
+                    <strong>Tip:</strong> If a game requires an emulator that isn't installed yet, OmniEmu will prompt you to install it first.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Controller Setup -->
+    <section id="controller-setup" class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">6</span>
+                    <h2>Controller Setup</h2>
+                </div>
+                <p>OmniEmu supports navigating the entire UI using a gamepad, so you never need to touch your keyboard or mouse.</p>
+
+                <h3>UI Navigation Controls</h3>
+                <div class="guide-control-grid">
+                    <div class="guide-control">
+                        <span class="guide-control-key">DPad</span>
+                        <span>Navigate between items</span>
+                    </div>
+                    <div class="guide-control">
+                        <span class="guide-control-key">A Button</span>
+                        <span>Select / Confirm</span>
+                    </div>
+                    <div class="guide-control">
+                        <span class="guide-control-key">B Button</span>
+                        <span>Go back / Cancel</span>
+                    </div>
+                    <div class="guide-control">
+                        <span class="guide-control-key">Start</span>
+                        <span>Open menu / Launch game</span>
+                    </div>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>Note:</strong> Controller input mapping within emulators is handled by each emulator's own settings. Connect your controller before launching the emulator for automatic detection.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIOS Manager -->
+    <section id="bios-manager" class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">7</span>
+                    <h2>BIOS Manager</h2>
+                </div>
+                <p>Some emulators require BIOS files to function. OmniEmu can scan and manage these for you.</p>
+                <div class="guide-step">
+                    <p>1. Go to <strong>Settings</strong> and find the <strong>BIOS Manager</strong> section.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Click <strong>Scan</strong> to detect BIOS files in your configured directories.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. OmniEmu will check which BIOS files are present and which are missing.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. Click <strong>Update Config</strong> to automatically update RetroArch's BIOS configuration.</p>
+                </div>
+                <div class="guide-tip">
+                    <strong>Required BIOS examples:</strong> PlayStation 1 (<code>scph1001.bin</code>), PlayStation 2 (<code>SCPH-70012.bin</code>), Sega Saturn, PC Engine, and more.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes -->
+    <section id="themes" class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">8</span>
+                    <h2>Light &amp; Dark Mode</h2>
+                </div>
+                <p>OmniEmu supports both light and dark themes.</p>
+                <div class="guide-step">
+                    <p>1. Go to <strong>Settings</strong> in the sidebar.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Find the <strong>Appearance</strong> section.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Choose from:</p>
+                    <ul class="guide-list">
+                        <li><strong>System</strong> &mdash; Matches your OS preference automatically</li>
+                        <li><strong>Light</strong> &mdash; Always use the light theme</li>
+                        <li><strong>Dark</strong> &mdash; Always use the dark theme</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Auto-Update -->
+    <section id="auto-update" class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">9</span>
+                    <h2>Auto-Updates</h2>
+                </div>
+                <p>OmniEmu checks for updates automatically on launch. When an update is available:</p>
+                <div class="guide-step">
+                    <p>1. A notification will appear in the app.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Click <strong>Update</strong> to download and install the latest version.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. OmniEmu will restart with the new version applied.</p>
+                </div>
+                <div class="guide-tip">
+                    <strong>Note:</strong> The <code>.yml</code> files in releases are metadata used by the auto-updater system. You can ignore them if downloading manually.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <span class="guide-section-num">10</span>
+                    <h2>Troubleshooting</h2>
+                </div>
+
+                <h3>macOS: "OmniEmu is damaged and can't be opened"</h3>
+                <p>This happens because the app isn't code-signed. Run this command:</p>
+                <div class="code-block">
+                    <code>sudo xattr -rd com.apple.quarantine /Applications/OmniEmu.app</code>
+                </div>
+
+                <h3>Windows: SmartScreen blocks the app</h3>
+                <p>Click <strong>More Info</strong> then <strong>Run Anyway</strong>. This is normal for unsigned applications.</p>
+
+                <h3>Linux: AppImage won't launch</h3>
+                <p>Ensure you have <code>libfuse2</code> installed. On Ubuntu/Debian: <code>sudo apt install libfuse2</code></p>
+
+                <h3>Emulator fails to install</h3>
+                <p>Check your internet connection and available disk space. Some emulators require 200+ MB. Try restarting OmniEmu and attempting the install again.</p>
+
+                <h3>ROMs not showing up after scan</h3>
+                <p>Ensure your ROM files are in supported formats and that the directory path in Settings is correct. OmniEmu scans subdirectories, so you can point it at a parent folder.</p>
+
+                <h3>BIOS files not detected</h3>
+                <p>Make sure your BIOS files have the correct filenames and are placed in a standard BIOS directory. Some emulators expect specific file names (e.g., <code>scph1001.bin</code> for PS1).</p>
+
+                <h3>Game art not loading</h3>
+                <p>Game art scraping requires an internet connection. If artwork doesn't appear, check your connection and try rescanning the library.</p>
+
+                <div class="guide-tip" style="margin-top: 32px;">
+                    <strong>Still stuck?</strong> <a href="https://github.com/mileswolfallen2/OmniEmu2.0/issues" target="_blank">Open an issue on GitHub</a> and describe the problem. Include your OS, OmniEmu version, and any error messages.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section section-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png" alt="OmniEmu" class="footer-icon">
+                    <span class="footer-name">OmniEmu</span>
+                    <p class="footer-tagline">All your games. One place.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="help-guide.html">Help Guide</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0" target="_blank">GitHub</a>
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/blob/main/LICENSE" target="_blank">MIT License</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OmniEmu. Open source under the MIT License.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                links.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
