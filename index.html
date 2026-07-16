@@ -39,6 +39,12 @@
         </div>
     </nav>
 
+    <!-- Active Development Banner -->
+    <div class="dev-banner">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        OmniEmu is in active development. Updates ship frequently and things may break.
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
@@ -46,7 +52,7 @@
             <div class="hero-grid"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge">v0.3.1 &mdash; Now Available</div>
+            <div class="hero-badge">v0.3.2 &mdash; Now Available</div>
             <h1>All Your Games.<br><span class="gradient-text">One Place.</span></h1>
             <p class="hero-desc">OmniEmu is a cross-platform emulator manager, game launcher, and ROM library for Windows, macOS, and Linux. Install emulators with one click, scan your ROMs, and launch games from a unified library.</p>
             <div class="hero-buttons">
@@ -88,7 +94,7 @@
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
                     </div>
                     <h3>One-Click Setup</h3>
-                    <p>Download, install, and auto-configure 10 emulators from inside the app. No terminal required.</p>
+                    <p>Download, install, and auto-configure 20+ emulators from inside the app. No terminal required.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -96,13 +102,6 @@
                     </div>
                     <h3>ROM Library</h3>
                     <p>Scan your ROMs, browse by platform, and launch games directly from a unified library.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                    </div>
-                    <h3>Auto-Update</h3>
-                    <p>Built-in updater keeps OmniEmu current without manual downloads.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -127,18 +126,31 @@
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                    </div>
-                    <h3>Light & Dark Mode</h3>
-                    <p>Choose your theme or follow your system preference automatically.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
                     </div>
                     <h3>Cross-Platform</h3>
                     <p>Identical experience on Windows, macOS, and Linux (x64 & ARM64).</p>
                 </div>
+                <div class="feature-card feature-card-beta">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <h3>Cloud Sync <span class="beta-tag">Beta</span></h3>
+                    <p>Sync your game saves between devices with built-in Syncthing integration. Free and fully local.</p>
+                </div>
+                <div class="feature-card feature-card-beta">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <h3>Decomp Projects <span class="beta-tag">Beta</span></h3>
+                    <p>Install and manage native PC ports built from reverse-engineered source code.</p>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="beta-features.html" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    Explore All Beta Features
+                </a>
             </div>
         </div>
     </section>
@@ -148,7 +160,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>Supported Emulators</h2>
-                <p>10 powerful emulators, all managed from one app</p>
+                <p>20 emulators and counting, all managed from one app</p>
             </div>
             <div class="emulators-grid">
                 <div class="emulator-card">
@@ -157,9 +169,9 @@
                         <span class="emulator-systems">GameCube, Wii</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -168,9 +180,9 @@
                         <span class="emulator-systems">PlayStation 3</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -179,9 +191,9 @@
                         <span class="emulator-systems">Nintendo Switch</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -190,31 +202,9 @@
                         <span class="emulator-systems">PlayStation 2</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
-                    </div>
-                </div>
-                <div class="emulator-card">
-                    <div class="emulator-header">
-                        <h3>MAME</h3>
-                        <span class="emulator-systems">Arcade</span>
-                    </div>
-                    <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
-                    </div>
-                </div>
-                <div class="emulator-card">
-                    <div class="emulator-header">
-                        <h3>PPSSPP</h3>
-                        <span class="emulator-systems">PSP</span>
-                    </div>
-                    <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -223,9 +213,42 @@
                         <span class="emulator-systems">PlayStation 1</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Mednafen</h3>
+                        <span class="emulator-systems">PS1, PC Engine, Lynx, Neo Geo Pocket, WonderSwan</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>MAME</h3>
+                        <span class="emulator-systems">Arcade</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>PPSSPP</h3>
+                        <span class="emulator-systems">PSP</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -234,9 +257,9 @@
                         <span class="emulator-systems">Nintendo DS</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
                 <div class="emulator-card">
@@ -245,20 +268,119 @@
                         <span class="emulator-systems">Dreamcast, Naomi, Atomiswave</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
-                <div class="emulator-card emulator-card-wide">
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Cemu</h3>
+                        <span class="emulator-systems">Wii U</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>xemu</h3>
+                        <span class="emulator-systems">Original Xbox</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Vita3K</h3>
+                        <span class="emulator-systems">PS Vita</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Azahar</h3>
+                        <span class="emulator-systems">Nintendo 3DS</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Project64</h3>
+                        <span class="emulator-systems">Nintendo 64</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check-unavail">macOS</span>
+                        <span class="check-unavail">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Snes9x</h3>
+                        <span class="emulator-systems">SNES</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>mGBA</h3>
+                        <span class="emulator-systems">Game Boy, GBA</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>Mesen2</h3>
+                        <span class="emulator-systems">NES, SNES, GB, GBA, PC Engine</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
                     <div class="emulator-header">
                         <h3>RetroArch</h3>
                         <span class="emulator-systems">Multi-system (NES, SNES, N64, GB/GBA, PS1, and more)</span>
                     </div>
                     <div class="emulator-platforms">
-                        <span class="check" title="Windows">Windows</span>
-                        <span class="check" title="macOS">macOS</span>
-                        <span class="check" title="Linux">Linux</span>
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
+                    </div>
+                </div>
+                <div class="emulator-card">
+                    <div class="emulator-header">
+                        <h3>ES-DE <span class="beta-tag">Beta</span></h3>
+                        <span class="emulator-systems">Frontend / Launcher</span>
+                    </div>
+                    <div class="emulator-platforms">
+                        <span class="check">Windows</span>
+                        <span class="check">macOS</span>
+                        <span class="check">Linux</span>
                     </div>
                 </div>
             </div>
@@ -314,7 +436,7 @@
                     </div>
                     <h3>macOS</h3>
                     <p class="download-desc">Universal binary. Drag to Applications.</p>
-                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/0.3.1/OmniEmu-0.3.1-mac-universal.dmg" class="btn btn-primary">
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/v0.3.2/OmniEmu-0.3.2-mac-universal.dmg" class="btn btn-primary">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         Download .dmg
                     </a>
@@ -326,7 +448,7 @@
                     </div>
                     <h3>Windows</h3>
                     <p class="download-desc">Installer. SmartScreen &rarr; More Info &rarr; Run.</p>
-                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/0.3.1/OmniEmu-0.3.1-win-x64.exe" class="btn btn-primary">
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/v0.3.2/OmniEmu-0.3.2-win-x64.exe" class="btn btn-primary">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         Download .exe
                     </a>
@@ -338,7 +460,7 @@
                     </div>
                     <h3>Linux</h3>
                     <p class="download-desc">AppImage. chmod +x and run.</p>
-                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/0.3.1/OmniEmu-0.3.1-linux-x86_64.AppImage" class="btn btn-primary">
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases/download/v0.3.2/OmniEmu-0.3.2-linux-x86_64.AppImage" class="btn btn-primary">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                         Download .AppImage
                     </a>
@@ -347,7 +469,7 @@
             </div>
             <div style="text-align: center;"><a href="https://github.com/mileswolfallen2/OmniEmu2.0/releases" target="_blank" class="download-other-releases">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                Looking for other releases, beta builds, or portable versions?
+                Looking for other or older releases, beta builds, or portable versions?
             </a></div>
         </div>
     </section>

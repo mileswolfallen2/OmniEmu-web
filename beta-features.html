@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Features - OmniEmu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png" alt="OmniEmu" class="nav-icon">
+                <span>OmniEmu</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features">Features</a>
+                <a href="index.html#emulators">Emulators</a>
+                <a href="help-guide.html">Help Guide</a>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About</a>
+                <a href="beta-features.html" class="active">Beta</a>
+                <a href="https://github.com/mileswolfallen2/OmniEmu2.0" target="_blank" class="nav-github">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                Experimental
+            </div>
+            <h1>Beta Features</h1>
+            <p>Preview what's coming next. Enable these under Settings &gt; Experimental with individual toggles for each feature.</p>
+            <div class="beta-warning">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <span>These features are in active development and are expected to be unstable. Expect frequent updates and occasional breakage.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud Sync -->
+    <section class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                    </div>
+                    <div>
+                        <h2>Cloud Sync</h2>
+                        <span class="beta-tag">Beta</span>
+                    </div>
+                </div>
+                <p>Sync your game saves between devices using Syncthing &mdash; free, open-source, and fully local. No third-party accounts or cloud services required.</p>
+
+                <h3>How It Works</h3>
+                <div class="guide-step">
+                    <p>1. Go to <strong>Settings &gt; Experimental &gt; Cloud Sync</strong> and install Syncthing with one click.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Syncthing auto-starts on launch once configured.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Host your device or pair with another device to share saves.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. Manage shared folders and paired devices from the Cloud Sync tab.</p>
+                </div>
+                <div class="guide-step">
+                    <p>5. Access the Syncthing Web UI for advanced configuration.</p>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>Privacy-first:</strong> All sync happens locally between your devices. No data ever leaves your network unless you configure relay access.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Save Manager -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                    </div>
+                    <h2>Save Manager</h2>
+                </div>
+                <p>Browse, back up, and delete game saves across all your emulators from one place.</p>
+
+                <h3>Features</h3>
+                <div class="guide-two-col">
+                    <div class="guide-info-card">
+                        <h4>By Game View</h4>
+                        <p>Fuzzy-matched titles group saves by game across different emulators, so you can see everything for one game at a glance.</p>
+                    </div>
+                    <div class="guide-info-card">
+                        <h4>By Emulator View</h4>
+                        <p>See all saves organized by which emulator created them, with support for RetroArch's recursive core-directory scanning.</p>
+                    </div>
+                </div>
+                <div class="guide-tip" style="margin-top: 20px;">
+                    <strong>Safety first:</strong> OmniEmu backs up your saves before any delete operation, so you can always restore them.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend Support -->
+    <section class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <div>
+                        <h2>Frontend Support</h2>
+                        <span class="beta-tag">Beta</span>
+                    </div>
+                </div>
+                <p>Launch alternative frontends directly from OmniEmu for a more console-like experience.</p>
+
+                <div class="guide-emulator-list">
+                    <div class="guide-emu-item">
+                        <strong>ES-DE</strong> &mdash; Full integration with auto-configuration. A polished, feature-rich frontend with scraping, themes, and more.
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>NeoStation</strong> &mdash; Flutter-based frontend with built-in ScreenScraper integration for automatic game metadata.
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Pegasus</strong> &mdash; Automatic collection file generation from your ROM library. Lightweight and highly customizable.
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>EmuBuddy</strong> &mdash; Available to all users (not behind the beta toggle).
+                    </div>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>How to enable:</strong> Go to <strong>Settings &gt; Experimental</strong> and toggle on Frontend Support.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decomp Projects -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                    </div>
+                    <div>
+                        <h2>Decomp Projects</h2>
+                        <span class="beta-tag">Beta</span>
+                    </div>
+                </div>
+                <p>Native PC ports built from reverse-engineered source code. Bring your own ROM and OmniEmu handles the rest.</p>
+
+                <h3>Supported Projects</h3>
+                <div class="guide-emulator-list">
+                    <div class="guide-emu-item">
+                        <strong>Ship of Harkinian</strong> &mdash; The Legend of Zelda: Ocarina of Time (N64)
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>2 Ship 2 Harkinian</strong> &mdash; The Legend of Zelda: Majora's Mask (N64)
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>SoH Demo</strong> &mdash; Ship of Harkinian Demo Build
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Portal 64</strong> &mdash; Portal (N64 decomp)
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Banana Mania PC</strong> &mdash; Super Monkey Ball Banana Mania PC port
+                    </div>
+                </div>
+
+                <h3>What OmniEmu Does</h3>
+                <div class="guide-step">
+                    <p>1. Auto-downloads the latest release from GitHub.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Guides you through providing the required ROM file.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Manages updates and configuration automatically.</p>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>How to enable:</strong> Go to <strong>Settings &gt; Experimental</strong> and toggle on Decomp Projects.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SteamGridDB Cover Art -->
+    <section class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                    </div>
+                    <h2>SteamGridDB Cover Art</h2>
+                </div>
+                <p>Search and set custom cover art from SteamGridDB's free API when the automatic scraper doesn't find the right image.</p>
+
+                <h3>How It Works</h3>
+                <div class="guide-step">
+                    <p>1. Open the game detail modal for any game in your library.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Click the cover art area and search SteamGridDB.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Select a thumbnail &mdash; it's downloaded locally for instant display.</p>
+                </div>
+                <div class="guide-step">
+                    <p>4. Use <strong>Reset Cover</strong> to clear custom art and revert to the auto-scraped version.</p>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>Rate-limit aware:</strong> OmniEmu automatically retries if the API rate-limits your request, so bulk updates work smoothly.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Themes -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    </div>
+                    <h2>Theme Packs</h2>
+                </div>
+                <p>Seven built-in themes to customize the look and feel of OmniEmu.</p>
+
+                <div class="themes-grid">
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #f5f5f7;"></span>
+                        <span class="theme-name">Light</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #0a0a0f;"></span>
+                        <span class="theme-name">Dark</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview theme-preview-system"></span>
+                        <span class="theme-name">System</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #0f172a;"></span>
+                        <span class="theme-name">Midnight</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #1a1008;"></span>
+                        <span class="theme-name">Ember</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #1a1225;"></span>
+                        <span class="theme-name">Lavender</span>
+                    </div>
+                    <div class="theme-card">
+                        <span class="theme-preview" style="background: #0a1a18;"></span>
+                        <span class="theme-name">Jade</span>
+                    </div>
+                </div>
+
+                <div class="guide-tip">
+                    <strong>How to change:</strong> Go to <strong>Settings &gt; Appearance</strong> and select your preferred theme.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enable Instructions -->
+    <section class="section">
+        <div class="container">
+            <div class="guide-section">
+                <div class="guide-section-header">
+                    <div class="beta-feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    </div>
+                    <h2>How to Enable Experimental Features</h2>
+                </div>
+                <div class="guide-step">
+                    <p>1. Open OmniEmu and go to <strong>Settings</strong>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>2. Navigate to <strong>Experimental</strong>.</p>
+                </div>
+                <div class="guide-step">
+                    <p>3. Toggle on the features you want to try:</p>
+                </div>
+                <div class="guide-emulator-list">
+                    <div class="guide-emu-item">
+                        <strong>Frontend Support</strong> &mdash; ES-DE, NeoStation, Pegasus, EmuBuddy
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Beta Emulators</strong> &mdash; Additional experimental emulator support
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Decomp Projects</strong> &mdash; Native PC ports from reverse-engineered source
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Remote Presets</strong> &mdash; Fetch recommended config presets from a remote URL
+                    </div>
+                    <div class="guide-emu-item">
+                        <strong>Cloud Sync</strong> &mdash; Sync saves between devices via Syncthing
+                    </div>
+                </div>
+                <div class="guide-tip">
+                    <strong>Note:</strong> Beta features may be unstable. Report any issues on <a href="https://github.com/mileswolfallen2/OmniEmu2.0/issues" target="_blank">GitHub Issues</a>.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="section section-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://raw.githubusercontent.com/mileswolfallen2/OmniEmu2.0/main/assets/icon.png" alt="OmniEmu" class="footer-icon">
+                    <span class="footer-name">OmniEmu</span>
+                    <p class="footer-tagline">All your games. One place.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="help-guide.html">Help Guide</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="beta-features.html">Beta Features</a>
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0" target="_blank">GitHub</a>
+                    <a href="https://github.com/mileswolfallen2/OmniEmu2.0/blob/main/LICENSE" target="_blank">MIT License</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 OmniEmu. Open source under the MIT License.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            links.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                links.classList.remove('active');
+                toggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

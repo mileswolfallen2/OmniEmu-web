@@ -50,7 +50,7 @@ a {
 
 /* ── Navbar ── */
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -141,6 +141,21 @@ a {
     background: var(--text-primary);
     border-radius: 2px;
     transition: var(--transition);
+}
+
+/* ── Active Development Banner ── */
+.dev-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: rgba(251, 191, 36, 0.08);
+    border-bottom: 1px solid rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 /* ── Hero ── */
@@ -350,6 +365,48 @@ a {
     transform: translateY(-4px);
 }
 
+.feature-card-beta {
+    border-color: rgba(124, 92, 252, 0.2);
+}
+
+.feature-card-beta:hover {
+    border-color: var(--accent);
+}
+
+.beta-tag {
+    display: inline-block;
+    background: rgba(124, 92, 252, 0.15);
+    color: var(--accent-light);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 100px;
+    vertical-align: middle;
+    margin-left: 6px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.beta-warning {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: rgba(251, 191, 36, 0.06);
+    border: 1px solid rgba(251, 191, 36, 0.2);
+    border-radius: var(--radius-sm);
+    color: #fbbf24;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
 .feature-icon {
     width: 52px;
     height: 52px;
@@ -430,6 +487,17 @@ a {
     background: rgba(52, 211, 153, 0.1);
     padding: 3px 10px;
     border-radius: 100px;
+}
+
+.emulator-platforms .check-unavail {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 3px 10px;
+    border-radius: 100px;
+    text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /* ── Steps ── */
@@ -666,15 +734,25 @@ a {
 .features-grid .feature-card:nth-child(8) { transition-delay: 0.35s; }
 
 .emulators-grid .emulator-card:nth-child(1) { transition-delay: 0s; }
-.emulators-grid .emulator-card:nth-child(2) { transition-delay: 0.04s; }
-.emulators-grid .emulator-card:nth-child(3) { transition-delay: 0.08s; }
-.emulators-grid .emulator-card:nth-child(4) { transition-delay: 0.12s; }
-.emulators-grid .emulator-card:nth-child(5) { transition-delay: 0.16s; }
-.emulators-grid .emulator-card:nth-child(6) { transition-delay: 0.2s; }
-.emulators-grid .emulator-card:nth-child(7) { transition-delay: 0.24s; }
-.emulators-grid .emulator-card:nth-child(8) { transition-delay: 0.28s; }
-.emulators-grid .emulator-card:nth-child(9) { transition-delay: 0.32s; }
-.emulators-grid .emulator-card:nth-child(10) { transition-delay: 0.36s; }
+.emulators-grid .emulator-card:nth-child(2) { transition-delay: 0.03s; }
+.emulators-grid .emulator-card:nth-child(3) { transition-delay: 0.06s; }
+.emulators-grid .emulator-card:nth-child(4) { transition-delay: 0.09s; }
+.emulators-grid .emulator-card:nth-child(5) { transition-delay: 0.12s; }
+.emulators-grid .emulator-card:nth-child(6) { transition-delay: 0.15s; }
+.emulators-grid .emulator-card:nth-child(7) { transition-delay: 0.18s; }
+.emulators-grid .emulator-card:nth-child(8) { transition-delay: 0.21s; }
+.emulators-grid .emulator-card:nth-child(9) { transition-delay: 0.24s; }
+.emulators-grid .emulator-card:nth-child(10) { transition-delay: 0.27s; }
+.emulators-grid .emulator-card:nth-child(11) { transition-delay: 0.3s; }
+.emulators-grid .emulator-card:nth-child(12) { transition-delay: 0.33s; }
+.emulators-grid .emulator-card:nth-child(13) { transition-delay: 0.36s; }
+.emulators-grid .emulator-card:nth-child(14) { transition-delay: 0.39s; }
+.emulators-grid .emulator-card:nth-child(15) { transition-delay: 0.42s; }
+.emulators-grid .emulator-card:nth-child(16) { transition-delay: 0.45s; }
+.emulators-grid .emulator-card:nth-child(17) { transition-delay: 0.48s; }
+.emulators-grid .emulator-card:nth-child(18) { transition-delay: 0.51s; }
+.emulators-grid .emulator-card:nth-child(19) { transition-delay: 0.54s; }
+.emulators-grid .emulator-card:nth-child(20) { transition-delay: 0.57s; }
 
 .steps .step:nth-child(1) { transition-delay: 0s; }
 .steps .step:nth-child(3) { transition-delay: 0.1s; }
@@ -801,6 +879,22 @@ a {
     margin: 0 auto;
 }
 
+.page-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(124, 92, 252, 0.1);
+    border: 1px solid rgba(124, 92, 252, 0.3);
+    color: var(--accent-light);
+    padding: 5px 14px;
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 /* ── Active nav link ── */
 .nav-links a.active {
     color: var(--text-primary);
@@ -887,6 +981,26 @@ a {
     align-items: center;
     gap: 16px;
     margin-bottom: 24px;
+}
+
+.beta-feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(124, 92, 252, 0.1);
+    border-radius: 12px;
+    color: var(--accent-light);
+    flex-shrink: 0;
+}
+
+.beta-feature-icon + div,
+.beta-feature-icon ~ div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .guide-section-num {
@@ -1039,6 +1153,47 @@ a {
 
 .guide-emu-item strong {
     color: var(--text-primary);
+}
+
+/* ── Themes Grid ── */
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.theme-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+}
+
+.theme-card:hover {
+    border-color: var(--border-hover);
+}
+
+.theme-preview {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.theme-preview-system {
+    background: linear-gradient(90deg, #f5f5f7 50%, #0a0a0f 50%);
+}
+
+.theme-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-secondary);
 }
 
 /* ── Controller Grid ── */
