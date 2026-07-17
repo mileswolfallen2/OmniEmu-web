@@ -276,6 +276,11 @@
         </div>
     </section>
 
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
     <script>
         // Mobile nav toggle
         const toggle = document.querySelector('.nav-toggle');
@@ -289,6 +294,15 @@
                 links.classList.remove('active');
                 toggle.classList.remove('active');
             });
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 600);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         // FAQ accordion

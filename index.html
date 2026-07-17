@@ -54,7 +54,7 @@
         <div class="hero-content">
             <div class="hero-badge">v0.3.2 &mdash; Now Available</div>
             <h1>All Your Games.<br><span class="gradient-text" id="rotate-word">One Place.</span></h1>
-            <p class="hero-desc">OmniEmu is a cross-platform emulator manager, game launcher, and ROM library for Windows, macOS, and Linux. Install emulators with one click, scan your ROMs, and launch games from a unified library.</p>
+            <p class="hero-desc">OmniEmu is a cross-platform emulator manager, game launcher, and ROM library for Windows, macOS, and Linux. Install emulators with one click, scan your ROMs, and launch games from one app</p>
             <div class="hero-buttons">
                 <a href="#download" class="btn btn-primary">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -498,6 +498,11 @@
         </div>
     </section>
 
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
     <script>
         // Mobile nav toggle
         const toggle = document.querySelector('.nav-toggle');
@@ -544,6 +549,15 @@
 
         document.querySelectorAll('.feature-card, .emulator-card, .step, .download-card').forEach(el => {
             observer.observe(el);
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 600);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         // Hero rotating text animation
